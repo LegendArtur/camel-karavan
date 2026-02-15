@@ -152,7 +152,7 @@ const prerenderConfig = (webpackEnv) => {
             }),
             new CopyPlugin({
                 patterns: [
-                    {from: "metadata", to: "metadata"}
+                    {from: "metadata", to: "metadata", noErrorOnMissing: true}
                 ],
             }),
         ],
